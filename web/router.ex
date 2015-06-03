@@ -16,6 +16,7 @@ defmodule Codail.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/sleep/:time", SleepController, :index
   end
 
   # Other scopes may use custom stacks.
