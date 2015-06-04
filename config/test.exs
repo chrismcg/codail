@@ -8,11 +8,3 @@ config :codail, Codail.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
-# Configure your database
-config :codail, Codail.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "codail_test",
-  size: 1 # Use a single connection for transactional tests
