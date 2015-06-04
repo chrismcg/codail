@@ -46,6 +46,5 @@ config :logger, level: :info
 #     config :codail, Codail.Endpoint, server: true
 #
 
-# Finally import the config/prod.secret.exs
-# which should be versioned separately.
-import_config "prod.secret.exs"
+config :phlink, Phlink.Endpoint,
+  secret_key_base: System.get_env("SECRET_KEY_BASE")
