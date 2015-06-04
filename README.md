@@ -1,8 +1,8 @@
 # Codail
 
-To start your new Phoenix application:
+A web app that supports one action `/sleep/:time` and sleeps for `time`
+milliseconds before returning a 200 OK.
 
-1. Install dependencies with `mix deps.get`
-2. Start Phoenix endpoint with `mix phoenix.server`
+It exists so I can play around with handling long API requests, timeouts etc.
 
-Now you can visit `localhost:4000` from your browser.
+It's available at http://codail.chrismcg.com
